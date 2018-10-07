@@ -34,6 +34,9 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(BUTTON, GPIO.IN)
 GPIO.setup(LED, GPIO.OUT)
 
+# USB key FS label
+USBNAME = "1GB" # 1GB is the name of my thumb drive
+
 ## Some functions
 def mpdConnect(client, con_id):
         """
@@ -93,7 +96,7 @@ def main():
         updateLED(client)
 
         while True:
-                device = checkForUSBDevice("1GB") # 1GB is the name of my thumb drive
+                device = checkForUSBDevice(USBNAME)
                 if device != "":
                         # USB thumb drive has been inserted, new music will be copied
                         flashLED(0.1, 5)
@@ -103,7 +106,7 @@ def main():
                         print client.status()
                         flashLED(0.1, 5)
                         # wait until thumb drive is umplugged again
-                        while checkForUSBDevice("1GB") == device:
+                        while checkForUSBDevice(USBNAME) == device:
                                 sleep(1.0)
                         flashLED(0.1, 5)
                 if GPIO.input(BUTTON) == True:
@@ -127,4 +130,4 @@ def main():
 
 # Script starts here
 if __name__ == "__main__":
-    main()
+main()
