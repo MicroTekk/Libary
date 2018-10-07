@@ -1,3 +1,22 @@
+
+    1 Raspberry Pi
+    1 ModMyPi enclosure
+    1 button
+    2 resistors (330 Ohm, 10 Kilo-Ohm)
+    1 blue LED
+    1 (slow) 8GB SD-Card
+    some wire
+    a pair of speakers
+
+    Raspbian minimal image (http://www.linuxsystems.it/2012/06/raspbian-wheezy-armhf-raspberry-pi-minimal-image)
+    mpd (music player daemon)
+    mpc
+    mpd-python
+    pyudev (for USB access)
+    a self-written python script
+
+
+
 I just completed building this and have some addendum notes adding more details:
 Install the following packages:
 sudo apt-get install mpd
