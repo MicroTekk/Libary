@@ -1,4 +1,22 @@
-    /*
+/*
+Technische Daten:
+Gehäusefarbe: milchig, diffus
+Durchmesser: 5mm
+Intensität: rot 93,5mcd, grün 220mcd, blau 137,5mcd
+Öffnungswinkel: diffus
+Betriebsspannung: rot 1,8V - blau und grün  3,2 V
+Betriebsstrom: 20mA pro Kanal
+Betriebsstrom max.: 50mA pro Kanal max. gepulst
+Pulsbetrieb: Pulsweite = 0,1ms, Pulswiederholrate = 1/10
+Lichtfarbe: rot 620nm, grün 520nm, blau 470nm
+Die 3 Grundfarben werden über die drei Kathoden angesteuert.
+
+Gemeinsamer PLUSPOL (gem. Anode).
+*/
+
+
+
+/*
      RGB LED CUBE
     */
      
